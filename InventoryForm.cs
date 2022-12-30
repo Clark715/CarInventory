@@ -57,5 +57,10 @@ namespace CarInventory
             }
 
         }
+
+        private void InventoryForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

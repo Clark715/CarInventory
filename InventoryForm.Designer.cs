@@ -39,7 +39,6 @@
             this.carTrans = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carDrivetrain = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.idText = new System.Windows.Forms.TextBox();
@@ -62,7 +61,6 @@
             this.valueLabel = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -139,10 +137,6 @@
             this.carValue.HeaderText = "VALUE";
             this.carValue.Name = "carValue";
             this.carValue.ReadOnly = true;
-            // 
-            // carBindingSource
-            // 
-            this.carBindingSource.DataSource = typeof(CarInventory.Car);
             // 
             // button1
             // 
@@ -349,7 +343,6 @@
             this.Text = "Car Inventory Simulator";
             this.Load += new System.EventHandler(this.InventoryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,7 +353,6 @@
         private DataGridView dataGridView1;
         private Button button1;
         private Button button2;
-        private BindingSource carBindingSource;
         private TextBox idText;
         private Label idLabel;
         private TextBox makeText;
